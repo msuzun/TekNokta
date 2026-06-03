@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/TekNokta.Api/TekNokta.Api.csproj" />
+    <Project Path="src/TekNokta.Application/TekNokta.Application.csproj" />
+    <Project Path="src/TekNokta.Domain/TekNokta.Domain.csproj" />
+    <Project Path="src/TekNokta.Infrastructure/TekNokta.Infrastructure.csproj" />
+  </Folder>
+</Solution>
