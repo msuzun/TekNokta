@@ -1,4 +1,4 @@
-using TekNokta.Infrastructure;
+using TekNokta.Infrastructure.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
