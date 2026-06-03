@@ -6,10 +6,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using TekNokta.Application.Repositories;
 using TekNokta.Application.Services;
+using TekNokta.Application.Services.Database;
 using TekNokta.Infrastructure.Authentication;
 using TekNokta.Infrastructure.Persistence;
 using TekNokta.Infrastructure.Repositories;
 using TekNokta.Infrastructure.Services;
+using TekNokta.Infrastructure.Services.Database;
 
 namespace TekNokta.Infrastructure.DependencyInjection;
 
@@ -32,6 +34,7 @@ public static class InfrastructureServiceRegistration
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<ITokenService, TokenService>();
         services.AddScoped<IPasswordHasher, PasswordHasher>();
+        services.AddScoped<IDatabaseRoutineExecutor, SqlDatabaseRoutineExecutor>();
 
         services
             .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
